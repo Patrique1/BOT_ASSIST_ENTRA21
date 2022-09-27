@@ -3,7 +3,7 @@ import keyboard
 from time import sleep
 import webbrowser
 import selenium
-from Sites_WebScraping import entra21
+import Sites_WebScraping as SW
 
 global BROWSING_PERMISSION
 global SCRAPING_PERMISSION
@@ -45,7 +45,7 @@ def inicialize():
         BROWSING_PERMISSION = False
         return BROWSING_PERMISSION
     elif SCRAPING_PERMISSION == True:
-        entra21()
+        SW.entra21()
         SCRAPING_PERMISSION = False
         return SCRAPING_PERMISSION
 

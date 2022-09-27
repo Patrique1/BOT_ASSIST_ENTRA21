@@ -20,11 +20,9 @@
       "google": "https://www.google.com.br"
     }
   },
-  "comando": {
-    "funcao": {
-      "tela": {
-        "mensagem": "aaa"
-      }
+  "logar": {
+    "site": {
+      "aluno": "https://externo.proway.com.br/login-aluno"
     }
   }
 }

@@ -2,10 +2,23 @@ import json
 import keyboard
 from time import sleep
 import webbrowser
+import selenium
+from Sites_WebScraping import entra21
+
+global BROWSING_PERMISSION
+global SCRAPING_PERMISSION
+def raspagem(command):
+    pass
 
 def validation(command):
     for i in command:
         if i in data:
+            if i == "acessa" or i == "pesquisa" or i == "abra":
+                BROWSING_PERMISSION = True
+                SCRAPING_PERMISSION = False
+            elif i == "logar":
+                SCRAPING_PERMISSION = True
+                BROWSING_PERMISSION = False
             for j in command:
                 if j in data[i]:
                     for z in command:
@@ -13,7 +26,7 @@ def validation(command):
                             result = data[i][j][z]
                     break
         break
-    return result
+    return result, SCRAPING_PERMISSION, BROWSING_PERMISSION
 
 
 def navegador(command):
@@ -26,10 +39,15 @@ def navegador(command):
 def inicialize():
     print('O que deseja fazer hoje?')
     x = input('>>> ').lower().split()
-    value = validation(x)
-    for i in x:
-        if i == "site" or i == "pesquise":
-            return navegador(value)
+    value, SCRAPING_PERMISSION, BROWSING_PERMISSION = validation(x)
+    if BROWSING_PERMISSION == True:
+        navegador(value)
+        BROWSING_PERMISSION = False
+        return BROWSING_PERMISSION
+    elif SCRAPING_PERMISSION == True:
+        entra21()
+        SCRAPING_PERMISSION = False
+        return SCRAPING_PERMISSION
 
 
 

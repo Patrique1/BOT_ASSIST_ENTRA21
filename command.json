@@ -20,9 +20,9 @@
       "google": "https://www.google.com.br"
     }
   },
-  "logar": {
-    "site": {
-      "aluno": "https://externo.proway.com.br/login-aluno"
+  "adicionar": {
+    "novo": {
+      "contato": "database"
     }
   }
 }

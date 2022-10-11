@@ -4,11 +4,10 @@ from time import sleep
 import webbrowser
 import selenium
 import Sites_WebScraping as SW
+import teste_de_funcionalidades
 
 global BROWSING_PERMISSION
 global SCRAPING_PERMISSION
-def raspagem(command):
-    pass
 
 def validation(command):
     for i in command:
@@ -24,16 +23,11 @@ def validation(command):
                     for z in command:
                         if z in data[i][j]:
                             result = data[i][j][z]
+                            SCRAPING_PERMISSION = False
+                            BROWSING_PERMISSION = False
                     break
         break
     return result, SCRAPING_PERMISSION, BROWSING_PERMISSION
-
-
-def navegador(command):
-    x = command
-    webbrowser.open_new_tab(x)
-
-
 
 
 def inicialize():
@@ -41,13 +35,15 @@ def inicialize():
     x = input('>>> ').lower().split()
     value, SCRAPING_PERMISSION, BROWSING_PERMISSION = validation(x)
     if BROWSING_PERMISSION == True:
-        navegador(value)
+        SW.google_wiki_summary()
         BROWSING_PERMISSION = False
         return BROWSING_PERMISSION
     elif SCRAPING_PERMISSION == True:
         SW.entra21()
         SCRAPING_PERMISSION = False
         return SCRAPING_PERMISSION
+    elif value == 'database' and SCRAPING_PERMISSION == False and BROWSING_PERMISSION == False:
+        teste_de_funcionalidades.update_user_data()
 
 
 

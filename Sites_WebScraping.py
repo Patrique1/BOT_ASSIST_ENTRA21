@@ -1,7 +1,9 @@
 import wikipedia
+import requests
 from time import sleep
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
 import pyttsx3
 
 def entra21():
@@ -47,6 +49,18 @@ def entra21():
 
 def google():
     search = input('O que você deseja pesquisar: ').lower()
+    #
+    # driver = webdriver.Chrome(executable_path=r"C:\Users\patrique.pacheco\AppData\Local\Programs\Python\Python310\chromedriver.exe")
+    # driver.maximize_window()
+    # driver.get("https://www.google.com.br/")
+    # sleep(2)
+    # driver.find_element(By.NAME, 'q').send_keys(search + Keys.RETURN)
+    # sleep(5)
 
-    print(wikipedia.summary(f"{search}"))
+    resp = requests.get(f"https://www.google.com/search?q={search}")
+
+    for link in resp.links:
+        print(link)
+
+
 

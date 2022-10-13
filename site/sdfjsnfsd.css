@@ -11,18 +11,11 @@ body{
 	background-color: #E6EFFF;	
 }
 nav {
-	background: #B2C9F4;
+	background: #E6EFFF;
 	height: 80px;
 	width: 100%;
 }
-label .nome {
-	color: #110E2D;
-	font-size: 50px;
-	line-height: 75px; 
-	padding: 0 100px;
-	font-family: 'Gemunu Libre', sans-serif;
-	margin-left: 80px;
-}
+
 nav ul{
 	/* puxa o menu para o lado direito */
 	float: right;
@@ -79,7 +72,96 @@ li:hover ul, .menu li.over ul{display:block;}
 .barra_de_navegacao li ul li{
 	display:block;
 	width:150px;
-	}
+}
+
+#gabriel h1 {
+    font-family: 'Gemunu Libre', sans-serif; 
+    font-size: 60px;
+    color:#110E2D;
+	margin-left: 100px;
+}
+
+#gabriel img {
+    width:600px;
+    height:1000px;
+    margin-left:100px ;
+	border:#110E2D 2px;
+}
+
+#gabriel p {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 30px;
+    color:#110E2D;
+}
+
+#greyce h1 {
+    font-family: 'Gemunu Libre', sans-serif;
+    font-size: 60px;
+    color:#110E2D;
+	margin-left: 100px;
+}
+
+#greyce img {
+    width:600px;
+    height:1000px;
+    margin-left:50px ;
+    border-radius: 100px;
+}
+
+#greyce p {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 30px;
+    color:#110E2D;
+}
+
+#julius h1 {
+    font-family: 'Gemunu Libre', sans-serif;
+    font-size: 60px;
+    color:#110E2D;
+	margin-left: 100px;
+}
+
+#julius img {
+    width:600px;
+    height:1000px;
+    margin-left:100px ;
+}
+
+#julius p {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 30px;
+    color:#110E2D;
+}
+
+#patrique h1{
+    font-family: 'Gemunu Libre', sans-serif; 
+    font-size: 60px;
+    color:#110E2D;
+	margin-left: 100px;
+}    
+
+#patrique img {
+    width:600px;
+    height:1000px;
+    margin-left:100px ;
+    border-radius: 100px;
+}
+ 
+#patrique p{
+   	font-family: 'Roboto', sans-serif; 
+   	font-size: 25px;
+   	color:#110E2D;
+   	margin-left: 300px;
+	margin-right:300px ;
+}
+
+#footer p{
+	color:#110E2D;
+	font-family: 'Roboto', sans-serif; 
+	font-size: 20px;
+	text-align: center;
+	
+}
 
 @media (max-width: 952px){
 	label.logo{

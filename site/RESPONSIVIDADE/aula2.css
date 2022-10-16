@@ -1,0 +1,101 @@
+h1{
+   color:red; 
+}
+
+/* sintaxe media query */
+@media screen and (max-width: 500px){
+    /* max width: telas menores que alguma resolucao */
+  
+    h1{
+        color:blue;
+    }
+}
+
+/* OUTROS MODOS: */
+/* screen, print, speech, all(atinge tudo, não importa o dispositivo) */
+
+@media print and (max-width: 600px){
+    h1{
+        color: green;
+    }  
+}
+
+/* todos os modos*/
+@media (max-width:700px) {
+    h2{
+       color: purple; 
+    }
+}
+
+/* mobile first (min-width > max-width) */
+@media (min-width: 200px){
+    /* telas maiores que esse tamanho seguirão tal condicao */
+    h2{
+        color:aqua;
+    }
+}
+
+/* quando trabalhar com max é melhor ir das resolucoes maiores para as menores */
+/* quado trabalhar com min é melhor ir das resolucoes menores para as maiores  */
+
+/* AND no media query */
+@media (min-width: 300px) and (max-width: 400px){
+    h3{
+       font-size: 3em;
+    }
+}
+
+/* ORIENTACAO */
+@media (orientation: landscape){
+    /* posso ativar regras de estilo quando meu dispositivo estiver na horizontal */
+    h3{
+        color:brown;
+    }
+}
+
+/* OR na media query */
+@media (max-width: 200px), (orientation: landscape){
+    h3{
+        font-size: 4em;
+    }
+}
+
+/* CUIDADO ao aplicar MQ (a ordem importa) */
+@media (min-width: 600px){
+    h4{
+        color: red;
+    }
+}
+
+/*  breakpoints*/
+h5{
+    color: aqua;
+}
+
+/* 480px - 768px = tablet */
+@media (min-width: 480px){
+    h5{
+        color: burlywood;
+    }
+}
+
+/* 768px - 1024px = telas menores, laptops */
+@media (min-width: 768px){
+    h5{
+       color: cadetblue; 
+    }
+}
+
+/* 1024px - 1200px = desktop */
+@media (min-width: 1024px){
+    h5{
+        color: coral;
+    }
+}
+
+/* 1200 e + = telas maiores, tvs */
+@media (min-width: 1200px){
+    h5{
+        color:darkorchid;
+    }
+}

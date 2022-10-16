@@ -1,53 +1,88 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200&family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
 
 body {
     background-color: #E6EFFF;
+    min-height: 100vh;
 }
 
-.barra_de_navegacao{
-    color:#110E2D;
-    list-style:none;
-    float:left;
-}
-
-.barra_de_navegacao li{
-    position:relative;
-    float:left;
-}
-
-.barra_de_navegacao li a{color:#333; text-decoration:none; padding:5px 10px; display:block;}
-
-.barra_de_navegacao li a:hover{
-    background:#333;
-    color:#fff;
-    text-shadow:0px 0px 5px #fff;
-}
-
-.barra_de_navegacao li  ul{
-    position:absolute;
-    top:25px;
+header{
+    position: fixed;
+    top: 0;
     left:0;
-    background-color:#fff;
-    display:none;
-}
-
-.barra_de_navegacao li:hover ul, .menu li.over ul{display:block;}
-
-.barra_de_navegacao li ul li{
-    border:1px solid #c0c0c0;
-    display:block;
-    width:150px;
-}
-
-nav ul li a {
-    color: #110E2D;
-    text-decoration: none;
+    right: 0;
+    /* cor da barra de navegacao e dos quadrados */
+    background: #ffff ;
+    /* cor que vao ficar as opcoes dos quadrados quando clicar */
+    box-shadow: 0 5px 10px black;
+    padding: 0px 7px;
     display: flex;
-    
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
 }
 
-li {
-    list-style-type: none;       
+header .logo{
+    font-family:'Gemunu Libre' ;
+    font-size: 25px;
+    color: #333
+}
+
+header .barra_de_navegacao ul{
+    list-style: none;        
+}
+
+header .barra_de_navegacao ul li{
+   position: relative;
+   float: left;
+}
+
+header .barra_de_navegacao ul li a{
+    font-size: 20px; 
+    padding: 20px;
+    color: #333; 
+    display:block;     
+}
+
+header .barra_de_navegacao ul li a:hover{
+    background: #333;
+    color: #fff; 
+}
+
+header .barra_de_navegacao ul li ul{
+    position: absolute;
+    left: 0;
+    width:200px ;
+    background: #fff;
+}
+
+header .barra_de_navegacao ul li ul li{
+   width: 100%; 
+   border-top: 1px solid black
+}
+
+
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul{
+    display: initial;  
+}
+
+menu-bar{
+    display: none;
+}
+
+header label{
+    font-family: 'Gemunu Libre';
+    font-size: 20px;
+    color:#333;
+    cursor: pointer;
+    display: none;
 }
 
 #gabriel img {
@@ -70,4 +105,31 @@ li {
     height: 300px;
     margin-left:170px ;
     border-radius: 10px;
+}
+
+
+@media (min-width: 1024px){
+    header{
+        padding: 20px;
+        
+    }
+    header label{
+        display: initial;
+        
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        border-top: 1px solid black;
+    }
+    header .navbar ul li{
+        width: 100%;
+    }
+    header .navbar ul li ul{
+        position: relative;
+        width: 100%;
+    }
 }

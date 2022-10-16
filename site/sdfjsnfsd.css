@@ -155,14 +155,6 @@ li:hover ul, .menu li.over ul{display:block;}
 	margin-right:300px ;
 }
 
-#footer p{
-	color:#110E2D;
-	font-family: 'Roboto', sans-serif; 
-	font-size: 20px;
-	text-align: center;
-	
-}
-
 @media (max-width: 952px){
 	label.logo{
 		font-size: 30px;

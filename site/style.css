@@ -5,11 +5,14 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    text-transform: capitalize;
 }
 
 body {
-    background-color: #E6EFFF;
+    background: #E6EFFF;
     min-height: 100vh;
+    background-size: cover;
+    background-position: center; 
 }
 
 header{
@@ -18,10 +21,10 @@ header{
     left:0;
     right: 0;
     /* cor da barra de navegacao e dos quadrados */
-    background: #ffff ;
+    background: #110E2D;
     /* cor que vao ficar as opcoes dos quadrados quando clicar */
-    box-shadow: 0 5px 10px black;
-    padding: 0px 7px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    padding: 0px 7%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -29,52 +32,53 @@ header{
 }
 
 header .logo{
-    font-family:'Gemunu Libre' ;
+    font-family:'Gemunu Libre';
     font-size: 25px;
-    color: #333
+    color: #fff;
 }
 
-header .barra_de_navegacao ul{
+header .navbar ul{
+    font-family: 'Roboto';
     list-style: none;        
 }
 
-header .barra_de_navegacao ul li{
+header .navbar ul li{
    position: relative;
    float: left;
 }
 
-header .barra_de_navegacao ul li a{
+header .navbar ul li a{
     font-size: 20px; 
     padding: 20px;
-    color: #333; 
+    color: #fff; 
     display:block;     
 }
 
-header .barra_de_navegacao ul li a:hover{
-    background: #333;
+header .navbar ul li a:hover{
+    background: #110E2D;
     color: #fff; 
 }
 
-header .barra_de_navegacao ul li ul{
+header .navbar ul li ul{
     position: absolute;
     left: 0;
     width:200px ;
     background: #fff;
+    display:none;
 }
 
-header .barra_de_navegacao ul li ul li{
-   width: 100%; 
-   border-top: 1px solid black
+header .navbar ul li ul li{
+    width: 100%;
+    border-top: 1px solid rgba(0,0,0,.1);
 }
-
 
 header .navbar ul li:focus-within > ul,
 header .navbar ul li:hover > ul{
     display: initial;  
 }
 
-menu-bar{
-    display: none;
+#menu-bar {
+	display: none;
 }
 
 header label{
@@ -85,51 +89,121 @@ header label{
     display: none;
 }
 
-#gabriel img {
+#gabriel h1 {
+    font-family: 'Gemunu Libre', sans-serif; 
+    font-size: 60px;
+    color:#110E2D;
+	margin-left: 100px;
+}
 
+#gabriel img {
+    width:600px;
+    height:1000px;
+    margin-left:100px ;
+}
+
+#gabriel p {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 30px;
+    color:#110E2D;
+}
+
+#greyce h1 {
+    font-family: 'Gemunu Libre', sans-serif;
+    font-size: 60px;
+    color:#110E2D;
+	margin-left: 100px;
 }
 
 #greyce img {
-    width: 50px;
-    height: 50px;
-    margin-left:170px ;
-    border-radius: 10px;
+    width:600px;
+    height:1000px;
+    margin-left:50px ;
+    border-radius: 100px;
+}
+
+#greyce p {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 30px;
+    color:#110E2D;
+}
+
+#julius h1 {
+    font-family: 'Gemunu Libre', sans-serif;
+    font-size: 60px;
+    color:#110E2D;
+	margin-left: 100px;
 }
 
 #julius img {
-
+    width:600px;
+    height:1000px;
+    margin-left:100px ;
 }
+
+#julius p {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 30px;
+    color:#110E2D;
+}
+
+#patrique h1{
+    font-family: 'Gemunu Libre', sans-serif; 
+    font-size: 60px;
+    color:#110E2D;
+	margin-left: 100px;
+}    
 
 #patrique img {
-    width:200px;
-    height: 300px;
-    margin-left:170px ;
-    border-radius: 10px;
+    width:600px;
+    height:1000px;
+    margin-left:100px ;
+    border-radius: 100px;
+}
+ 
+#patrique p{
+   	font-family: 'Roboto', sans-serif; 
+   	font-size: 25px;
+   	color:#110E2D;
+   	margin-left: 300px;
+	margin-right:300px ;
 }
 
 
-@media (min-width: 1024px){
+@media (max-width:991px){
     header{
-        padding: 20px;
-        
+        padding: 20px;    
     }
+
     header label{
-        display: initial;
-        
+       display: initial; 
     }
+    
     header .navbar{
         position: absolute;
-        top: 100%;
+        top: 50%;
         left: 0;
         right: 0;
         background: #fff;
-        border-top: 1px solid black;
+        border-top: 1px solid rgba(0,0,0,.1);
+        display: none;
     }
+    
     header .navbar ul li{
-        width: 100%;
+        width:100%;
     }
+    
     header .navbar ul li ul{
         position: relative;
         width: 100%;
     }
+        
+    header .navbar ul li ul li{
+        background: #eee;
+    }
+
+    #menu-bar:checked ~ .navbar{
+        display: initial;            
+    }
+
 }

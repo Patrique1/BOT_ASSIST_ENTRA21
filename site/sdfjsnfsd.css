@@ -7,9 +7,11 @@
 	list-style: none;
 	box-sizing: border-box;
 }
+
 body{
 	background-color: #E6EFFF;	
 }
+
 nav {
 	background: #E6EFFF;
 	height: 80px;
@@ -21,12 +23,14 @@ nav ul{
 	float: right;
 	margin-right: 100px;
 }
+
 nav ul li{
 	/* deixa o menu alinhado */
 	display: inline-block;
 	line-height: 80px;
 	margin: 0 5px;
 }
+
 nav ul li a {
 	color: #110E2D;
 	font-size: 25px;
@@ -37,10 +41,12 @@ nav ul li a {
 	padding:0.5px 25px;
 	display:block;
 }
+
 a.active, a:hover {
 	background: #110E2D;
 	transition: 0.5s;
 }
+
 .checkbtn {
 	font-size: 30px;
 	color: white;
@@ -50,6 +56,7 @@ a.active, a:hover {
 	cursor: pointer;
 	display: none;
 }
+
 #check {
 	display: none;
 }
@@ -164,10 +171,13 @@ li:hover ul, .menu li.over ul{display:block;}
 		font-size: 16px;
 	}
 }
+
 @media (max-width: 858px){
+	
 	.checkbtn {
 		display: block;
 	}
+	
 	ul{
 		position: fixed;
 		width: 100%;
@@ -178,18 +188,22 @@ li:hover ul, .menu li.over ul{display:block;}
 		text-align: center;
 		transition: all .5s;
 	}
+	
 	nav ul li{
 		display: block;
 		margin: 50px 0;
 		line-height: 30px;
 	}
+	
 	nav ul li a {
 		font-size: 20px;
 	}
+		
 	a:hover, a.active {
 		background: none;
 		color: #5434af;
 	}
+	
 	#check:checked ul {
 		left: 0;
 	}

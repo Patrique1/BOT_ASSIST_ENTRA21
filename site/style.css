@@ -5,7 +5,6 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    text-transform: capitalize;
 }
 
 body {
@@ -23,7 +22,7 @@ header{
     /* cor da barra de navegacao e dos quadrados */
     background: #110E2D;
     /* cor que vao ficar as opcoes dos quadrados quando clicar */
-    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    box-shadow: 0 5px 10px #fff;
     padding: 0px 7%;
     display: flex;
     align-items: center;
@@ -84,7 +83,7 @@ header .navbar ul li:hover > ul{
 header label{
     font-family: 'Gemunu Libre';
     font-size: 20px;
-    color:#333;
+    color:#fff;
     cursor: pointer;
     display: none;
 }
@@ -184,8 +183,8 @@ header label{
         top: 50%;
         left: 0;
         right: 0;
-        background: #fff;
-        border-top: 1px solid rgba(0,0,0,.1);
+        background: #110E2D;
+        border-top: 1px solid #fff;
         display: none;
     }
     
@@ -199,7 +198,8 @@ header label{
     }
         
     header .navbar ul li ul li{
-        background: #eee;
+        background-color: #fff;
+        color:#110E2D
     }
 
     #menu-bar:checked ~ .navbar{

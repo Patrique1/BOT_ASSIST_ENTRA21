@@ -3,47 +3,34 @@ import keyboard
 from time import sleep
 import webbrowser
 import selenium
-import Sites_WebScraping as SW
-import teste_de_funcionalidades
-
-global BROWSING_PERMISSION
-global SCRAPING_PERMISSION
-
-def validation(command):
-    for i in command:
-        if i in data:
-            if i == "acessa" or i == "pesquisa" or i == "abra":
-                BROWSING_PERMISSION = True
-                SCRAPING_PERMISSION = False
-            elif i == "logar":
-                SCRAPING_PERMISSION = True
-                BROWSING_PERMISSION = False
-            for j in command:
-                if j in data[i]:
-                    for z in command:
-                        if z in data[i][j]:
-                            result = data[i][j][z]
-                            SCRAPING_PERMISSION = False
-                            BROWSING_PERMISSION = False
-                    break
-        break
-    return result, SCRAPING_PERMISSION, BROWSING_PERMISSION
-
+import Wally_Google
+import Wally_Tube
+import files_system as fs
+import Wally_database as wdb
 
 def inicialize():
-    print('O que deseja fazer hoje?')
-    x = input('>>> ').lower().split()
-    value, SCRAPING_PERMISSION, BROWSING_PERMISSION = validation(x)
-    if BROWSING_PERMISSION == True:
-        SW.google_wiki_summary()
-        BROWSING_PERMISSION = False
-        return BROWSING_PERMISSION
-    elif SCRAPING_PERMISSION == True:
-        SW.entra21()
-        SCRAPING_PERMISSION = False
-        return SCRAPING_PERMISSION
-    elif value == 'database' and SCRAPING_PERMISSION == False and BROWSING_PERMISSION == False:
-        teste_de_funcionalidades.update_user_data()
+    print('Wally - O que deseja fazer hoje?')
+    print('''OPÇÕES
+    [1] PESQUISAR ALGO
+    [2] ASSISTIR ALGO
+    [3] MODO SISTEMA
+    [4] AGENDA
+    [0] SAIR ''')
+    op = input('>>> ').lower()
+
+    if op == '1':
+        Wally_Google.search_google()
+    elif op == '2':
+        Wally_Tube.search_youtube()
+    elif op == '3':
+        fs.main()
+    elif op == '4':
+        wdb.main()
+    elif op == '5':
+        pass
+    elif op == '0':
+        exit()
+
 
 
 

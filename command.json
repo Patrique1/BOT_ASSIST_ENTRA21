@@ -1,28 +1,7 @@
 {
-  "acessa": {
-    "site": {
-      "entra21": "https://www.entra21.com.br/",
-      "nasa": "https://www.nasa.gov/",
-      "google": "https://www.google.com.br"
-    }
-  },
-  "abra": {
-    "site": {
-      "entra21": "https://www.entra21.com.br/",
-      "nasa": "https://www.nasa.gov/",
-      "google": "https://www.google.com.br"
-    }
-  },
-  "pesquise": {
-    "sobre": {
-      "entra21": "https://www.entra21.com.br/",
-      "nasa": "https://www.nasa.gov/",
-      "google": "https://www.google.com.br"
-    }
-  },
-  "adicionar": {
-    "novo": {
-      "contato": "database"
-    }
-  }
+  "pesquise": [
+    "google",
+    "youtube"
+  ]
 }
+

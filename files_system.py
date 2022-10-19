@@ -1,5 +1,7 @@
 import os
 
+import keyboard
+
 lista_de_programas = ['chrome.exe', 'word.exe', 'excel.exe', 'calc.exe']
 
 # Acessando todas as pastas no windows.
@@ -77,6 +79,7 @@ def menu_sys():
         [1] Documentos
         [2] Downloads
         [3] Área de trabalho
+        [4] SAIR
         >>> """)
     try:
         if caminho == '1':
@@ -88,6 +91,8 @@ def menu_sys():
         elif caminho == '3':
             path_sys = r'C:\Users\gabri\Desktop'
             os.chdir(path_sys)
+        elif caminho == '4' or keyboard.is_pressed('ctrl+alt+g'):
+            exit()
     except Exception:
         print("Comando inválido, tente usar uma das opções disponíveis!")
 
@@ -124,8 +129,11 @@ def main():
         menu = input("""Deseja retornar e modificar o caminho do sistema?
         [1] Permanecer e continuar
         [2] Retornar e modificar caminho
+        [3] SAIR
         >>> """)
         if menu == '1':
             pass
         elif menu == '2':
             menu_sys()
+        elif menu == '3' or keyboard.is_pressed('ctrl+alt+g'):
+            exit()

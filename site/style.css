@@ -14,8 +14,14 @@ body {
     background-position: center; 
 }
 
+#imagem_som img{
+    height: 1000px;
+    width: 3000px;
+
+}
+
 header {
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     left:0;
     right: 0;
@@ -50,7 +56,8 @@ header .navbar ul li a {
     font-size: 25px; 
     padding: 25px;
     color: #fff; 
-    display:block;     
+    display:block;  
+    transition: all 0.5s ease-in-out;   
 }
 
 header .navbar ul li a:hover {
@@ -96,12 +103,12 @@ header label {
 
 #nome_wally {
     margin-left: 50%;
-    margin-top: -35%;     
+    margin-top: -40%;     
 }
 
 #complemento_wally {
     margin-left: 50%;
-    margin-top: -25%;             
+    margin-top: -30%;             
 }
 
 #gabriel h1 {
@@ -125,8 +132,9 @@ header label {
     font-family: 'Roboto', sans-serif; 
     font-size: 25px;
     color:#110E2D;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 45%;
+    margin-right: 5%;
+    margin-top:-25%;
 }
 
 #greyce h1 {
@@ -134,13 +142,15 @@ header label {
     font-size: 60px;
     color:#110E2D;
 	margin-left: 100px;
-    text-shadow: #110E2D 0.1em 0.1em 0.2em
+    text-shadow: #110E2D 0.1em 0.1em 0.2em;
+    margin-top: 20%;
 }
 
 #greyce img {
     width: 400px;
     height: 500px;
-    margin-left:10% ;
+    margin-left: 10%;
+    margin-top: 5%;
     border:5px solid #110E2D;
 }
 
@@ -148,8 +158,9 @@ header label {
     font-family: 'Roboto', sans-serif; 
     font-size: 25px;
     color:#110E2D;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 45%;
+    margin-right: 5%;
+    margin-top:-25%;
 }
 
 #julius h1 {
@@ -157,22 +168,25 @@ header label {
     font-size: 60px;
     color:#110E2D;
 	margin-left: 100px;
-    text-shadow: #110E2D 0.1em 0.1em 0.2em
+    text-shadow: #110E2D 0.1em 0.1em 0.2em;
+    margin-top:26%;
 }
 
 #julius img {
     width: 400px;
     height: 500px;
-    margin-left:10% ;
+    margin-left: 10%;
+    margin-top: 5%;
     border:5px solid #110E2D;
 }
 
 #julius p {
     font-family: 'Roboto', sans-serif; 
-    font-size: 20px;
+    font-size: 17px;
     color:#110E2D;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 45%;
+    margin-right: 5%;
+    margin-top:-33%;
 }
 
 #patrique h1 {
@@ -180,13 +194,15 @@ header label {
     font-size: 60px;
     color:#110E2D;
 	margin-left: 100px;
-    text-shadow: #110E2D 0.1em 0.1em 0.2em
+    text-shadow: #110E2D 0.1em 0.1em 0.2em;
+    margin-top: 14%;
 }    
 
 #patrique img {
     width: 400px;
     height: 500px;
-    margin-left:10% ;
+    margin-left: 10%;
+    margin-top: 5%;
     border:5px solid #110E2D;
 }
  
@@ -194,8 +210,29 @@ header label {
    	font-family: 'Roboto', sans-serif; 
    	font-size: 25px;
    	color:#110E2D;
-   	margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 45%;
+    margin-right: 5%;
+    margin-top:-25%;
+}
+
+#retangulo{
+    width:1350px;
+    height: 25vh;
+    background: #110E2D;
+    margin-top:150%;
+}
+
+#retangulo img{
+    height: 50%;
+    right: 50%;
+}
+footer p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    margin-left: 5%;
+    margin-bottom:100px ;
+   
 }
 
 
@@ -210,7 +247,7 @@ header label {
     
     header .navbar{
         position: absolute;
-        top: 50%;
+        top: 100%;
         left: 0;
         right: 0;
         background: #110E2D;

@@ -8,6 +8,7 @@ from time import sleep
 def search_youtube():
 
     search = input("O que deseja ver: ").lower()
+
     servico = Service(ChromeDriverManager().install())
     navegador = webdriver.Chrome(service=servico)
     navegador.maximize_window()

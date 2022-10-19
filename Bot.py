@@ -8,6 +8,9 @@ import Wally_Tube
 import files_system as fs
 import Wally_database as wdb
 
+Sys = None
+
+
 def inicialize():
     print('Wally - O que deseja fazer hoje?')
     print('''OPÇÕES
@@ -16,6 +19,7 @@ def inicialize():
     [3] MODO SISTEMA
     [4] AGENDA
     [0] SAIR ''')
+
     op = input('>>> ').lower()
 
     if op == '1':
@@ -28,10 +32,9 @@ def inicialize():
         wdb.main()
     elif op == '5':
         pass
-    elif op == '0':
-        exit()
-
-
+    elif op == '0' or op == 'sair' or op == 'pode fechar':
+        result = False
+        return result
 
 
 # Main seria a função principal para iniciar o assistente
@@ -41,7 +44,11 @@ if __name__ == '__main__':
         data = json.load(file)
         file.close()
     while True: # Esses laço garante o funcionamento do programa sempre que as teclas chaves foram pressionadas.
-        if keyboard.is_pressed('ctrl+alt+m'):
-            sleep(0.05)
-            inicialize()
-            sleep(0.05)
+     if keyboard.is_pressed('ctrl+alt+m'):
+        sleep(0.05)
+        Sys = inicialize()
+        sleep(0.05)
+        if Sys == False:
+            break
+     elif keyboard.is_pressed('ctrl+alt+g'):
+         exit()

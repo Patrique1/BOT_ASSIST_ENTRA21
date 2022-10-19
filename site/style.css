@@ -14,7 +14,7 @@ body {
     background-position: center; 
 }
 
-header{
+header {
     position: fixed;
     top: 0;
     left:0;
@@ -22,7 +22,7 @@ header{
     /* cor da barra de navegacao e dos quadrados */
     background: #110E2D;
     /* cor que vao ficar as opcoes dos quadrados quando clicar */
-    box-shadow: 0 5px 10px #fff;
+    box-shadow: 0 5px 10px black;
     padding: 0px 7%;
     display: flex;
     align-items: center;
@@ -30,35 +30,36 @@ header{
     z-index: 1000;
 }
 
-header .logo{
-    font-family:'Gemunu Libre';
-    font-size: 25px;
+header .logo {
+    font-family:'Gemunu Libre', sans-serif;
+    font-size: 35px;
     color: #fff;
 }
 
-header .navbar ul{
-    font-family: 'Roboto';
-    list-style: none;        
+header .navbar ul {
+    font-family: 'Gemunu Libre', sans-serif;
+    list-style: none;       
 }
 
-header .navbar ul li{
+header .navbar ul li {
    position: relative;
    float: left;
 }
 
-header .navbar ul li a{
-    font-size: 20px; 
-    padding: 20px;
+header .navbar ul li a {
+    font-size: 25px; 
+    padding: 25px;
     color: #fff; 
     display:block;     
 }
 
-header .navbar ul li a:hover{
+header .navbar ul li a:hover {
     background: #110E2D;
     color: #fff; 
 }
 
-header .navbar ul li ul{
+
+header .navbar ul li ul {
     position: absolute;
     left: 0;
     width:200px ;
@@ -66,9 +67,9 @@ header .navbar ul li ul{
     display:none;
 }
 
-header .navbar ul li ul li{
+header .navbar ul li ul li {
     width: 100%;
-    border-top: 1px solid rgba(0,0,0,.1);
+    border-top: 1px solid white;
 }
 
 header .navbar ul li:focus-within > ul,
@@ -80,12 +81,27 @@ header .navbar ul li:hover > ul{
 	display: none;
 }
 
-header label{
-    font-family: 'Gemunu Libre';
+header label {
+    font-family: 'Gemunu Libre', sans-serif;
     font-size: 20px;
     color:#fff;
     cursor: pointer;
     display: none;
+}
+
+#wally {
+    margin-left: 10%;
+    margin-top: 5%;     
+}
+
+#nome_wally {
+    margin-left: 50%;
+    margin-top: -35%;     
+}
+
+#complemento_wally {
+    margin-left: 50%;
+    margin-top: -25%;             
 }
 
 #gabriel h1 {
@@ -93,18 +109,24 @@ header label{
     font-size: 60px;
     color:#110E2D;
 	margin-left: 100px;
+    text-shadow: #110E2D 0.1em 0.1em 0.2em;
+    margin-top: 20%;
 }
 
 #gabriel img {
-    width:600px;
-    height:1000px;
-    margin-left:100px ;
+    width: 400px;
+    height: 500px;
+    margin-left: 10%;
+    margin-top: 5%;
+    border: 5px solid #110E2D;
 }
 
 #gabriel p {
     font-family: 'Roboto', sans-serif; 
-    font-size: 30px;
+    font-size: 25px;
     color:#110E2D;
+    margin-left: 30%;
+    margin-right: 30%;
 }
 
 #greyce h1 {
@@ -112,19 +134,22 @@ header label{
     font-size: 60px;
     color:#110E2D;
 	margin-left: 100px;
+    text-shadow: #110E2D 0.1em 0.1em 0.2em
 }
 
 #greyce img {
-    width:600px;
-    height:1000px;
-    margin-left:50px ;
-    border-radius: 100px;
+    width: 400px;
+    height: 500px;
+    margin-left:10% ;
+    border:5px solid #110E2D;
 }
 
 #greyce p {
     font-family: 'Roboto', sans-serif; 
-    font-size: 30px;
+    font-size: 25px;
     color:#110E2D;
+    margin-left: 30%;
+    margin-right: 30%;
 }
 
 #julius h1 {
@@ -132,40 +157,45 @@ header label{
     font-size: 60px;
     color:#110E2D;
 	margin-left: 100px;
+    text-shadow: #110E2D 0.1em 0.1em 0.2em
 }
 
 #julius img {
-    width:600px;
-    height:1000px;
-    margin-left:100px ;
+    width: 400px;
+    height: 500px;
+    margin-left:10% ;
+    border:5px solid #110E2D;
 }
 
 #julius p {
     font-family: 'Roboto', sans-serif; 
-    font-size: 30px;
+    font-size: 20px;
     color:#110E2D;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
-#patrique h1{
+#patrique h1 {
     font-family: 'Gemunu Libre', sans-serif; 
     font-size: 60px;
     color:#110E2D;
 	margin-left: 100px;
+    text-shadow: #110E2D 0.1em 0.1em 0.2em
 }    
 
 #patrique img {
-    width:600px;
-    height:1000px;
-    margin-left:100px ;
-    border-radius: 100px;
+    width: 400px;
+    height: 500px;
+    margin-left:10% ;
+    border:5px solid #110E2D;
 }
  
-#patrique p{
+#patrique p {
    	font-family: 'Roboto', sans-serif; 
    	font-size: 25px;
    	color:#110E2D;
-   	margin-left: 300px;
-	margin-right:300px ;
+   	margin-left: 30%;
+    margin-right: 30%;
 }
 
 
@@ -205,5 +235,8 @@ header label{
     #menu-bar:checked ~ .navbar{
         display: initial;            
     }
-
+    
+    #gabriel h1{
+        font-family: 'Roboto', sans-serif;
+    }
 }

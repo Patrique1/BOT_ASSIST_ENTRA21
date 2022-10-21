@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200&family=Roboto:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200;300;400;500&family=Lato:wght@100;300;400;700;900&display=swap');
 
 *{
     margin: 0;
@@ -158,7 +157,7 @@ header label {
 
 #sobre2 h1{
     font-family: 'Gemunu Libre';
-    font-size: 65px;
+    font-size: 75px;
     color:#110E2D;
     text-shadow: #110E2D 0.1em 0.1em 0.2em;
     margin-left: 5%;
@@ -167,7 +166,7 @@ header label {
 
 #sobre2 li{
     font-family: 'Roboto', sans-serif;
-    font-size: 32px;
+    font-size: 40px;
     color: #110E2D;
     margin-left: 8%;
     margin-top: 30px;
@@ -176,26 +175,35 @@ header label {
 
 #criadores{
     font-family: 'Gemunu Libre';
-    font-size: 45px;
+    font-size: 55px;
     color:#110E2D;
     text-shadow: #110E2D 0.1em 0.1em 0.2em;
     margin-left: 5%;
-    margin-top: 15%;   
+    margin-top: 25%;   
+}
+
+#sessao3 {
+    font-family: 'Gemunu Libre';
+    font-size: 55px;
+    color:#110E2D;
+    text-shadow: #110E2D 0.1em 0.1em 0.2em;
+    margin-left: 5%;
+    margin-top: 10%;       
 }
 
 #gabriel h1 {
-    font-family: 'Roboto', sans-serif; 
-    font-size: 60px;
+    font-family: 'Gemunu Libre', sans-serif; 
+    font-size: 65px;
     color:#110E2D;
 	margin-left: 100px;
-    margin-top: 20%;
+    margin-top: 5%;
 }
 
 #gabriel img {
     width: 400px;
     height: 500px;
     margin-left: 10%;
-    margin-top: 5%;
+    margin-top:5%;
     filter: drop-shadow(10px 10px 10px #110E2D);
 }
 
@@ -210,10 +218,9 @@ header label {
 
 #greyce h1 {
     font-family: 'Gemunu Libre', sans-serif;
-    font-size: 60px;
+    font-size: 65px;
     color:#110E2D;
 	margin-left: 100px;
-    text-shadow: #110E2D 0.1em 0.1em 0.2em;
     margin-top: 20%;
 }
 
@@ -236,10 +243,9 @@ header label {
 
 #julius h1 {
     font-family: 'Gemunu Libre', sans-serif;
-    font-size: 60px;
+    font-size: 65px;
     color:#110E2D;
 	margin-left: 100px;
-    text-shadow: #110E2D 0.1em 0.1em 0.2em;
     margin-top:26%;
 }
 
@@ -262,10 +268,9 @@ header label {
 
 #patrique h1 {
     font-family: 'Gemunu Libre', sans-serif; 
-    font-size: 60px;
+    font-size: 65px;
     color:#110E2D;
 	margin-left: 100px;
-    text-shadow: #110E2D 0.1em 0.1em 0.2em;
     margin-top: 14%;
 }    
 
@@ -290,23 +295,30 @@ header label {
     width:1350px;
     height: 25vh;
     background: #110E2D;
-    margin-top:150%;
+    margin-top:30%;
 }
 
-#retangulo img{
-    height: 50%;
-    right: 50%;
-}
-
-footer p{
+#linkedin p{
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     color: #fff;
-    margin-left: 5%;
-    margin-bottom:100px ;
-   
+    margin-left: 8%;
+    margin-top:600%;  
 }
 
+#rodape h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    margin-left: 8%;
+    margin-top:600%;      
+}
+
+#imagem img{
+    height: 15px;
+    right: 15px;
+    color:#110E2D;
+}
 
 @media (max-width:991px){
     header{

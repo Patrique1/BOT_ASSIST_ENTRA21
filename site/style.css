@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200;300;400;500&family=Lato:wght@100;300;400;700;900&display=swap');
 
 *{
     margin: 0;
@@ -12,12 +13,6 @@ body {
     min-height: 100vh;
     background-size: cover;
     background-position: center; 
-}
-
-#imagem_som img{
-    height: 1000px;
-    width: 3000px;
-
 }
 
 header {
@@ -65,7 +60,6 @@ header .navbar ul li a:hover {
     color: #fff; 
 }
 
-
 header .navbar ul li ul {
     position: absolute;
     left: 0;
@@ -97,26 +91,103 @@ header label {
 }
 
 #wally {
-    margin-left: 10%;
-    margin-top: 5%;     
+    width: 100px ;
+    right:100px ;
+    margin-left: 5%;
+    margin-top: 3%;     
 }
 
 #nome_wally {
-    margin-left: 50%;
-    margin-top: -40%;     
+    margin-left: 45%;
+    margin-top: -40%; 
 }
 
 #complemento_wally {
-    margin-left: 50%;
-    margin-top: -30%;             
+    margin-left: 45%;
+    margin-top:-30%;       
+}
+
+#imagem_som img{
+    height: 900px;
+    width: 1350px;
+    margin-top: -10%;
+}
+
+#pergunta{
+    margin-top: -45%;       
+}
+
+#pergunta h1{
+    font-family:'Gemunu Libre', sans-serif;
+    font-size: 80px;
+    color:#538EFA;
+    text-shadow: #538EFA 0.1em 0.1em 0.2em;
+    margin-left: 15%;
+
+}
+
+#pergunta h2{
+    font-family:'Gemunu Libre', sans-serif;
+    font-size: 82px;
+    color:#538EFA;
+    text-shadow: #538EFA 0.1em 0.1em 0.2em;
+    margin-left: 17%;
+}
+
+#sobre{
+    margin-top:2%;    
+}
+
+#sobre h1{
+    font-family: 'Gemunu Libre', sans-serif;
+    font-size: 45px;
+    color:#538EFA;
+    margin-left:10%;
+    margin-right:7%;
+    text-shadow: #538EFA 0.1em 0.1em 0.2em;     
+}
+
+#sobre h2{
+    font-family: 'Gemunu Libre', sans-serif;
+    font-size: 45px;
+    color:#538EFA;
+    margin-left:14%;
+    margin-right:7%;
+    text-shadow: #538EFA 0.1em 0.1em 0.2em;             
+}
+
+#sobre2 h1{
+    font-family: 'Gemunu Libre';
+    font-size: 65px;
+    color:#110E2D;
+    text-shadow: #110E2D 0.1em 0.1em 0.2em;
+    margin-left: 5%;
+    margin-top: 15%;   
+}
+
+#sobre2 li{
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    color: #110E2D;
+    margin-left: 8%;
+    margin-top: 30px;
+    cursor: pointer;     
+}
+
+#criadores{
+    font-family: 'Gemunu Libre';
+    font-size: 45px;
+    color:#110E2D;
+    text-shadow: #110E2D 0.1em 0.1em 0.2em;
+    margin-left: 5%;
+    margin-top: 15%;   
 }
 
 #gabriel h1 {
-    font-family: 'Gemunu Libre', sans-serif; 
+    font-family: 'Roboto', sans-serif; 
     font-size: 60px;
     color:#110E2D;
 	margin-left: 100px;
-    text-shadow: #110E2D 0.1em 0.1em 0.2em;
     margin-top: 20%;
 }
 
@@ -125,7 +196,7 @@ header label {
     height: 500px;
     margin-left: 10%;
     margin-top: 5%;
-    border: 5px solid #110E2D;
+    filter: drop-shadow(10px 10px 10px #110E2D);
 }
 
 #gabriel p {
@@ -151,7 +222,7 @@ header label {
     height: 500px;
     margin-left: 10%;
     margin-top: 5%;
-    border:5px solid #110E2D;
+    filter: drop-shadow(10px 10px 10px #110E2D);
 }
 
 #greyce p {
@@ -177,7 +248,7 @@ header label {
     height: 500px;
     margin-left: 10%;
     margin-top: 5%;
-    border:5px solid #110E2D;
+    filter: drop-shadow(10px 10px 10px #110E2D);
 }
 
 #julius p {
@@ -203,7 +274,7 @@ header label {
     height: 500px;
     margin-left: 10%;
     margin-top: 5%;
-    border:5px solid #110E2D;
+    filter: drop-shadow(10px 10px 10px #110E2D);
 }
  
 #patrique p {
@@ -226,6 +297,7 @@ header label {
     height: 50%;
     right: 50%;
 }
+
 footer p{
     font-family: 'Roboto', sans-serif;
     font-size: 20px;

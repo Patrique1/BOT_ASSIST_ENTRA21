@@ -284,49 +284,14 @@ header label {
 } */
 
 
-@media (min-width = 480px){
-    #wally{
-        width: 20px;
-        right: 20px;    
+@media (max-width = 768px) {
+    body{
+        background: red;
     }
-    
-    #nome_wally {
-        margin-left: 45%;
-        margin-top: -40%; 
-    }
-    
-    #complemento_wally {
-        margin-left: 45%;
-        margin-top: -30%;       
-    }
-    
-    #imagem_som img {
-        height: 900px;
-        width: 1350px;
-    }
-            
 }
 
-@media (min-width=320px){
-    #wally{
-        width: 20px;
-        right: 20px;    
-    }
-    
-    #nome_wally {
-        margin-left: 45%;
-        margin-top: -40%; 
-    }
-    
-    #complemento_wally {
-        margin-left: 45%;
-        margin-top: -30%;       
-    }
-    
-    #imagem_som img {
-        height: 900px;
-        width: 1350px;
-    }
-    
-    
+@media (max-width = 480px) {
+    body{
+        background: blue;                
+    }    
 }

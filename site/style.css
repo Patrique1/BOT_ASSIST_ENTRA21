@@ -15,29 +15,25 @@ body {
 }
 
 header {
-    /* position: fixed; */
     top: 0;
-    left:0;
+    left: 0;
     right: 0;
-    /* cor da barra de navegacao e dos quadrados */
     background: #110E2D;
-    /* cor que vao ficar as opcoes dos quadrados quando clicar */
     box-shadow: 0 5px 10px black;
     padding: 0px 7%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
+    font-family: 'Gemunu Libre', sans-serif;
 }
 
 header .logo {
-    font-family:'Gemunu Libre', sans-serif;
-    font-size: 35px;
+    font-size: 2.5em;
     color: #fff;
 }
 
 header .navbar ul {
-    font-family: 'Gemunu Libre', sans-serif;
     list-style: none;       
 }
 
@@ -50,8 +46,7 @@ header .navbar ul li a {
     font-size: 25px; 
     padding: 25px;
     color: #fff; 
-    display:block;  
-    transition: all 0.5s ease-in-out;   
+    display: block;    
 }
 
 header .navbar ul li a:hover {
@@ -62,7 +57,7 @@ header .navbar ul li a:hover {
 header .navbar ul li ul {
     position: absolute;
     left: 0;
-    width:200px ;
+    width: 200px;
     background: #110E2D;
     display:none;
 }
@@ -73,7 +68,7 @@ header .navbar ul li ul li {
 }
 
 header .navbar ul li:focus-within > ul,
-header .navbar ul li:hover > ul{
+header .navbar ul li:hover > ul {
     display: initial;  
 }
 
@@ -82,16 +77,15 @@ header .navbar ul li:hover > ul{
 }
 
 header label {
-    font-family: 'Gemunu Libre', sans-serif;
-    font-size: 20px;
+    font-size: 14rem;
     color:#fff;
     cursor: pointer;
     display: none;
 }
 
 #wally {
-    width: 100px ;
-    right:100px ;
+    width: 100px;
+    right: 100px;
     margin-left: 5%;
     margin-top: 3%;     
 }
@@ -103,79 +97,70 @@ header label {
 
 #complemento_wally {
     margin-left: 45%;
-    margin-top:-30%;       
+    margin-top: -30%;       
 }
 
-#imagem_som img{
+#imagem_som img {
     height: 900px;
     width: 1350px;
     margin-top: -10%;
 }
 
-#pergunta{
-    margin-top: -45%;       
+#sessao2 {
+    margin-top: -45%;
+    text-shadow: #538EFA 0.1em 0.1em 0.2em;
+    color:#538EFA;
+    font-family: 'Gemunu Libre', sans-serif;
 }
 
-#pergunta h1{
-    font-family:'Gemunu Libre', sans-serif;
-    font-size: 80px;
+#sessao2 h1 {
+    font-size: 5em;
+    margin-left: 14%;
+}
+
+#sessao2 h2 {
+    font-size: 5em;
+    margin-left: 16%;
+}
+
+#sobre {
+    margin-top: 2%;
+    font-family: 'Gemunu Libre', sans-serif;
     color:#538EFA;
     text-shadow: #538EFA 0.1em 0.1em 0.2em;
-    margin-left: 15%;
-
+    margin-right: 7%;         
 }
 
-#pergunta h2{
-    font-family:'Gemunu Libre', sans-serif;
-    font-size: 82px;
-    color:#538EFA;
-    text-shadow: #538EFA 0.1em 0.1em 0.2em;
-    margin-left: 17%;
+#sobre h1 {
+    font-size: 2.8em;
+    margin-left: 10%;    
 }
 
-#sobre{
-    margin-top:2%;    
+#sobre h2 {
+    font-size: 2.8em;
+    margin-left: 15%;          
 }
 
-#sobre h1{
-    font-family: 'Gemunu Libre', sans-serif;
-    font-size: 45px;
-    color:#538EFA;
-    margin-left:10%;
-    margin-right:7%;
-    text-shadow: #538EFA 0.1em 0.1em 0.2em;     
-}
-
-#sobre h2{
-    font-family: 'Gemunu Libre', sans-serif;
-    font-size: 45px;
-    color:#538EFA;
-    margin-left:14%;
-    margin-right:7%;
-    text-shadow: #538EFA 0.1em 0.1em 0.2em;             
-}
-
-#sobre2 h1{
+#sobre2 h1 {
     font-family: 'Gemunu Libre';
-    font-size: 75px;
+    font-size: 4.7em;
     color:#110E2D;
     text-shadow: #110E2D 0.1em 0.1em 0.2em;
     margin-left: 5%;
     margin-top: 15%;   
 }
 
-#sobre2 li{
+#sobre2 li {
     font-family: 'Roboto', sans-serif;
-    font-size: 40px;
+    font-size: 2.5em;
     color: #110E2D;
     margin-left: 8%;
-    margin-top: 30px;
-    cursor: pointer;     
+    margin-top: 3%;     
 }
 
-#criadores{
+#criadores {
     font-family: 'Gemunu Libre';
-    font-size: 55px;
+    font-size: 3.4em;
     color:#110E2D;
     text-shadow: #110E2D 0.1em 0.1em 0.2em;
     margin-left: 5%;
@@ -184,143 +169,79 @@ header label {
 
 #sessao3 {
     font-family: 'Gemunu Libre';
-    font-size: 55px;
+    font-size: 3.4em;
     color:#110E2D;
     text-shadow: #110E2D 0.1em 0.1em 0.2em;
     margin-left: 5%;
     margin-top: 10%;       
 }
 
-#gabriel h1 {
-    font-family: 'Gemunu Libre', sans-serif; 
-    font-size: 65px;
+#geral h1{
+    font-family: 'Gemunu Libre', sans-serif;
     color:#110E2D;
-	margin-left: 100px;
+    margin-left: 7%;
+    font-size: 4em;         
+}
+
+#geral img{
+    width: 700px;
+    height: 800px;
+    margin-left: -1%;
+    margin-top: -5%;
+    filter: drop-shadow(10px 10px 10px #110E2D);    
+}
+
+#geral p{
+    font-family: 'Roboto', sans-serif;
+    color:#110E2D;
+    margin-left: 45%;
+    margin-right: 5%;     
+}
+
+#gabriel h1 {
     margin-top: 5%;
 }
 
-#gabriel img {
-    width: 400px;
-    height: 500px;
-    margin-left: 10%;
-    margin-top:5%;
-    filter: drop-shadow(10px 10px 10px #110E2D);
-}
-
-#gabriel p {
-    font-family: 'Roboto', sans-serif; 
-    font-size: 25px;
-    color:#110E2D;
-    margin-left: 45%;
-    margin-right: 5%;
-    margin-top:-25%;
+#gabriel p { 
+    font-size: 1.5em;
+    margin-top: -37%;
 }
 
 #greyce h1 {
-    font-family: 'Gemunu Libre', sans-serif;
-    font-size: 65px;
-    color:#110E2D;
-	margin-left: 100px;
     margin-top: 20%;
 }
 
-#greyce img {
-    width: 400px;
-    height: 500px;
-    margin-left: 10%;
-    margin-top: 5%;
-    filter: drop-shadow(10px 10px 10px #110E2D);
-}
-
 #greyce p {
-    font-family: 'Roboto', sans-serif; 
-    font-size: 25px;
-    color:#110E2D;
-    margin-left: 45%;
-    margin-right: 5%;
-    margin-top:-25%;
+    font-size: 1.5em;
+    margin-top: -37%;
 }
 
 #julius h1 {
-    font-family: 'Gemunu Libre', sans-serif;
-    font-size: 65px;
-    color:#110E2D;
-	margin-left: 100px;
-    margin-top:26%;
-}
-
-#julius img {
-    width: 400px;
-    height: 500px;
-    margin-left: 10%;
-    margin-top: 5%;
-    filter: drop-shadow(10px 10px 10px #110E2D);
+    margin-top: 26%;
 }
 
 #julius p {
-    font-family: 'Roboto', sans-serif; 
-    font-size: 17px;
-    color:#110E2D;
-    margin-left: 45%;
-    margin-right: 5%;
-    margin-top:-33%;
+    font-size: 1.05em;
+    margin-top: -43%;
 }
 
-#patrique h1 {
-    font-family: 'Gemunu Libre', sans-serif; 
-    font-size: 65px;
-    color:#110E2D;
-	margin-left: 100px;
+#patrique h1 { 
     margin-top: 14%;
 }    
-
-#patrique img {
-    width: 400px;
-    height: 500px;
-    margin-left: 10%;
-    margin-top: 5%;
-    filter: drop-shadow(10px 10px 10px #110E2D);
-}
  
 #patrique p {
-   	font-family: 'Roboto', sans-serif; 
-   	font-size: 25px;
-   	color:#110E2D;
-    margin-left: 45%;
-    margin-right: 5%;
-    margin-top:-25%;
+   	font-size: 1.5em;
+    margin-top: -35%;
 }
 
-#retangulo{
-    width:1350px;
+#retangulo {
+    width: 1350px;
     height: 25vh;
     background: #110E2D;
     margin-top:30%;
 }
 
-#linkedin p{
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    color: #fff;
-    margin-left: 8%;
-    margin-top:600%;  
-}
-
-#rodape h3{
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    color: #fff;
-    margin-left: 8%;
-    margin-top:600%;      
-}
-
-#imagem img{
-    height: 15px;
-    right: 15px;
-    color:#110E2D;
-}
-
-@media (max-width:991px){
+/* @media (max-width:991px){
     header{
         padding: 20px;    
     }
@@ -360,4 +281,52 @@ header label {
     #gabriel h1{
         font-family: 'Roboto', sans-serif;
     }
+} */
+
+
+@media (min-width = 480px){
+    #wally{
+        width: 20px;
+        right: 20px;    
+    }
+    
+    #nome_wally {
+        margin-left: 45%;
+        margin-top: -40%; 
+    }
+    
+    #complemento_wally {
+        margin-left: 45%;
+        margin-top: -30%;       
+    }
+    
+    #imagem_som img {
+        height: 900px;
+        width: 1350px;
+    }
+            
+}
+
+@media (min-width=320px){
+    #wally{
+        width: 20px;
+        right: 20px;    
+    }
+    
+    #nome_wally {
+        margin-left: 45%;
+        margin-top: -40%; 
+    }
+    
+    #complemento_wally {
+        margin-left: 45%;
+        margin-top: -30%;       
+    }
+    
+    #imagem_som img {
+        height: 900px;
+        width: 1350px;
+    }
+    
+    
 }

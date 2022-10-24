@@ -217,7 +217,7 @@ header label {
 }
 
 #julius h1 {
-    margin-top: 26%;
+    margin-top: 16%;
 }
 
 #julius p {
@@ -226,7 +226,7 @@ header label {
 }
 
 #patrique h1 { 
-    margin-top: 14%;
+    margin-top: 10%;
 }    
  
 #patrique p {
@@ -239,59 +239,4 @@ header label {
     height: 25vh;
     background: #110E2D;
     margin-top:30%;
-}
-
-/* @media (max-width:991px){
-    header{
-        padding: 20px;    
-    }
-
-    header label{
-       display: initial; 
-    }
-    
-    header .navbar{
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: #110E2D;
-        border-top: 1px solid #fff;
-        display: none;
-    }
-    
-    header .navbar ul li{
-        width:100%;
-    }
-    
-    header .navbar ul li ul{
-        position: relative;
-        width: 100%;
-    }
-        
-    header .navbar ul li ul li{
-        background-color: #fff;
-        color:#110E2D
-    }
-
-    #menu-bar:checked ~ .navbar{
-        display: initial;            
-    }
-    
-    #gabriel h1{
-        font-family: 'Roboto', sans-serif;
-    }
-} */
-
-
-@media (max-width = 768px) {
-    body{
-        background: red;
-    }
-}
-
-@media (max-width = 480px) {
-    body{
-        background: blue;                
-    }    
 }

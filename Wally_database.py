@@ -1,6 +1,7 @@
 import sqlite3
 import requests as re
 from time import sleep
+import speech_recognition as sr
 
 conexao = sqlite3.connect('bdWally.db')
 cursor = conexao.cursor()
@@ -115,6 +116,9 @@ cursor = conexao.cursor()
 def insertTable2(nome, email, telefone):
     cursor.execute('INSERT INTO contatos (nome, email, telefone) VALUES (?,?,?)',
                    (nome, email, telefone))
+
+    print('Contato inserido com sucesso')
+
     conexao.commit()
 
 
@@ -149,7 +153,6 @@ def selectTable2(x):
             print(f'Telefone: {info}')
             break
 
-
     conexao.commit()
 
 
@@ -166,16 +169,18 @@ def main():
     print(f"Contatos totais: {qnt}")
     while True:
         print("\n", "="*55, "\n")
-        user = input("""O que você deseja fazer?
-        [1] - Inserir um novo contato na sua agenda.
-        [2] - Alterar informação de algum contato.
-        [3] - Excluir algum contato.
-        [4] - Visualizar informações de algum contato.
-        [5] - Sair
-        >>> """)
+        print("""O que você deseja fazer?
+        [1] - Inserir um novo contato.
+        [2] - Alterar informação.
+        [3] - Excluir contato.
+        [4] - Exibir informações.
+        [5] - Sair""")
         print()
 
+        user = input('Escolha uma opção: ')
+
         if user == '1':
+            print('Inserir contato na agenda:')
             nome = input('Nome: ').title()
             email = input('Email: ')
             telefone = input('Telefone: ')
@@ -186,14 +191,31 @@ def main():
             nome = input('Diga o nome do contato que você deseja alterar alguma informação: ').title()
 
             opcaoUser = input("""Qual informação você deseja alterar?
-                              [1] - Nome
-                              [2] - Email
-                              [3] - Telefone
-                              >>> """).title()
+                                [1] - Nome
+                                [2] - Email
+                                [3] - Telefone
+                                >>> """)
 
-            novaInfo = input('Nova informação: ').title()
+            if opcaoUser == '1':
+                opcaoUser = 'Nome'
 
-            updateTable2(nome, opcaoUser, novaInfo)
+                novaInfo = input('Nova informação: ').title()
+
+                updateTable2(nome, opcaoUser, novaInfo)
+
+            elif opcaoUser == '2':
+                opcaoUser = 'Email'
+
+                novaInfo = input('Nova informação: ')
+
+                updateTable2(nome, opcaoUser, novaInfo)
+
+            elif opcaoUser == '3':
+                opcaoUser = 'Telefone'
+
+                novaInfo = input('Nova informação: ')
+
+                updateTable2(nome, opcaoUser, novaInfo)
 
         elif user == '3':
             nome = input('Diga o nome do contato que você deseja deletar  \nNome: ').title()
@@ -205,6 +227,7 @@ def main():
             selectTable2(opcaoUser)
 
         elif user == '5':
+            print('Encerrando programa, agrademos a sua participação')
             break
 
 

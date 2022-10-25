@@ -1,0 +1,60 @@
+Date: 23/10/2022
+Time: 10:14
+Phone Number: +5547997760083
+Message: Testando mensagem automática
+--------------------
+Date: 23/10/2022
+Time: 10:15
+Phone Number: +5547997760083
+Message: Testando mensagem automática
+--------------------
+Date: 23/10/2022
+Time: 10:29
+Phone Number: +5547997760083
+Message: Testando mensagem automática
+--------------------
+Date: 23/10/2022
+Time: 11:3
+Phone Number: +55None
+Message: olá, testando
+--------------------
+Date: 23/10/2022
+Time: 11:8
+Phone Number: +55None
+Message: testando novamente
+--------------------
+Date: 23/10/2022
+Time: 11:10
+Phone Number: +55None
+Message: testando
+--------------------
+Date: 23/10/2022
+Time: 11:12
+Phone Number: +55None
+Message: teste
+--------------------
+Date: 23/10/2022
+Time: 11:18
+Phone Number: +55None
+Message: teste
+--------------------
+Date: 23/10/2022
+Time: 11:27
+Phone Number: +5547997760083
+Message: teste
+--------------------
+Date: 23/10/2022
+Time: 12:46
+Phone Number: +5547997802179
+Message: testando
+--------------------
+Date: 24/10/2022
+Time: 11:28
+Phone Number: +5547997433596
+Message: olá
+--------------------
+Date: 24/10/2022
+Time: 11:30
+Phone Number: +5547997433596
+Message: olá
+--------------------

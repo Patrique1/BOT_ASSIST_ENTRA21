@@ -31,13 +31,10 @@ def acessar_arquivo():
         os.startfile(new_path)
     except FileNotFoundError:
         print("Esse arquivo não existe aqui...")
-def modificar_arquivo():
+def renomear_arquivo():
     new_path = list_files_dir()
-
-    conteudo = input("Novo conteudo: ")
-    with open(f"{new_path}", "a+") as file:
-        file.writelines(f"{conteudo}\n")
-        file.close()
+    new_file_name = input("Diga o nome do novo arquivo: ")
+    os.rename(f'{new_path}', f'{new_file_name}')
 
 def deletando_arquivo():
     new_path = list_files_dir()
@@ -117,7 +114,7 @@ def main():
         elif op == "1":
             acessar_arquivo()
         elif op == "2":
-            modificar_arquivo()
+            renomear_arquivo()
         elif op == "3":
             deletando_arquivo()
         elif op == "4":
@@ -136,4 +133,4 @@ def main():
         elif menu == '2':
             menu_sys()
         elif menu == '3' or keyboard.is_pressed('ctrl+alt+g'):
-            exit()
+            break
